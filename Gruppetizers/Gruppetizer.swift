@@ -18,7 +18,7 @@ struct Gruppetizer : Decodable, Identifiable {
         var carbs : Int
 }
 
-struct GruppetizerResponse {
+struct GruppetizerResponse: Decodable {
     let request : [Gruppetizer]
 }
 
