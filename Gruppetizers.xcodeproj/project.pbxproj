@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		632F53732CC90508008D02AE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632F53722CC90508008D02AE /* NetworkManager.swift */; };
 		632F53752CC908E9008D02AE /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632F53742CC908E9008D02AE /* APError.swift */; };
+		632F53782CC91D2A008D02AE /* GruppetizersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632F53772CC91D2A008D02AE /* GruppetizersListViewModel.swift */; };
 		633D99072CC7B0D800B04707 /* GruppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633D99062CC7B0D800B04707 /* GruppetizersApp.swift */; };
 		633D99092CC7B0D800B04707 /* GruppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633D99082CC7B0D800B04707 /* GruppetizerTabView.swift */; };
 		633D990B2CC7B0D900B04707 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 633D990A2CC7B0D900B04707 /* Assets.xcassets */; };
@@ -23,6 +24,8 @@
 /* Begin PBXFileReference section */
 		632F53722CC90508008D02AE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		632F53742CC908E9008D02AE /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
+		632F53762CC91A67008D02AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		632F53772CC91D2A008D02AE /* GruppetizersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GruppetizersListViewModel.swift; sourceTree = "<group>"; };
 		633D99032CC7B0D800B04707 /* Gruppetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gruppetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		633D99062CC7B0D800B04707 /* GruppetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GruppetizersApp.swift; sourceTree = "<group>"; };
 		633D99082CC7B0D800B04707 /* GruppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GruppetizerTabView.swift; sourceTree = "<group>"; };
@@ -65,6 +68,7 @@
 		633D99052CC7B0D800B04707 /* Gruppetizers */ = {
 			isa = PBXGroup;
 			children = (
+				632F53762CC91A67008D02AE /* Info.plist */,
 				633D99062CC7B0D800B04707 /* GruppetizersApp.swift */,
 				633D99082CC7B0D800B04707 /* GruppetizerTabView.swift */,
 				633D990A2CC7B0D900B04707 /* Assets.xcassets */,
@@ -76,6 +80,7 @@
 				633D991C2CC7C5D400B04707 /* GruppetizerListCell.swift */,
 				632F53722CC90508008D02AE /* NetworkManager.swift */,
 				632F53742CC908E9008D02AE /* APError.swift */,
+				632F53772CC91D2A008D02AE /* GruppetizersListViewModel.swift */,
 			);
 			path = Gruppetizers;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 				632F53752CC908E9008D02AE /* APError.swift in Sources */,
 				633D99092CC7B0D800B04707 /* GruppetizerTabView.swift in Sources */,
 				633D99152CC7B1E400B04707 /* GruppetizerListView.swift in Sources */,
+				632F53782CC91D2A008D02AE /* GruppetizersListViewModel.swift in Sources */,
 				633D991B2CC7BBB800B04707 /* Gruppetizer.swift in Sources */,
 				632F53732CC90508008D02AE /* NetworkManager.swift in Sources */,
 				633D99072CC7B0D800B04707 /* GruppetizersApp.swift in Sources */,
@@ -225,7 +231,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -282,7 +288,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -303,6 +309,7 @@
 				DEVELOPMENT_TEAM = YZD7BZY478;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Gruppetizers/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -332,6 +339,7 @@
 				DEVELOPMENT_TEAM = YZD7BZY478;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Gruppetizers/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

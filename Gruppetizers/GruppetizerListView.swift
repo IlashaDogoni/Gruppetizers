@@ -8,12 +8,18 @@
 import SwiftUI
 
 struct GruppetizerListView: View {
+    
+    @StateObject var viewModel = GruppetizersListViewModel()
+     
     var body: some View {
         NavigationView {
-            List(MockData.gruppetizers) { gruppetizer in
+            List(viewModel.gruppetizers) { gruppetizer in
                 GruppetizerListCell(gruppetizer: gruppetizer)
             }
             .navigationTitle("🥓 Gruppetizers")
+        }
+        .onAppear {
+            viewModel.getGruppetizers()
         }
     }
 }
