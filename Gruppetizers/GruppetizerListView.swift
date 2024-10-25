@@ -10,16 +10,26 @@ import SwiftUI
 struct GruppetizerListView: View {
     
     @StateObject var viewModel = GruppetizersListViewModel()
-     
+    
     var body: some View {
-        NavigationView {
-            List(viewModel.gruppetizers) { gruppetizer in
-                GruppetizerListCell(gruppetizer: gruppetizer)
+        ZStack {
+            NavigationView {
+                List(viewModel.gruppetizers) { gruppetizer in
+                    GruppetizerListCell(gruppetizer: gruppetizer)
+                }
+                .navigationTitle("🥓 Gruppetizers")
             }
-            .navigationTitle("🥓 Gruppetizers")
+            .onAppear {
+                viewModel.getGruppetizers()
+            }
+            if viewModel.isLoading {
+                LoadingView()
+            }
         }
-        .onAppear {
-            viewModel.getGruppetizers()
+        .alert(item: $viewModel.alertItem) { alertItem in
+            Alert(title: alertItem.title,
+                  message: alertItem.message,
+                  dismissButton: alertItem.dismissButton)
         }
     }
 }

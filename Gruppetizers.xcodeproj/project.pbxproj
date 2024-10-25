@@ -19,6 +19,8 @@
 		633D99192CC7B21F00B04707 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633D99182CC7B21F00B04707 /* OrderView.swift */; };
 		633D991B2CC7BBB800B04707 /* Gruppetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633D991A2CC7BBB800B04707 /* Gruppetizer.swift */; };
 		633D991D2CC7C5D400B04707 /* GruppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633D991C2CC7C5D400B04707 /* GruppetizerListCell.swift */; };
+		63DA4B5B2CCB9F50005048A6 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA4B5A2CCB9F50005048A6 /* AlertItem.swift */; };
+		63DA4B5D2CCBAE36005048A6 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA4B5C2CCBAE36005048A6 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		633D99182CC7B21F00B04707 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		633D991A2CC7BBB800B04707 /* Gruppetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gruppetizer.swift; sourceTree = "<group>"; };
 		633D991C2CC7C5D400B04707 /* GruppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GruppetizerListCell.swift; sourceTree = "<group>"; };
+		63DA4B5A2CCB9F50005048A6 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		63DA4B5C2CCBAE36005048A6 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +83,10 @@
 				633D991A2CC7BBB800B04707 /* Gruppetizer.swift */,
 				633D991C2CC7C5D400B04707 /* GruppetizerListCell.swift */,
 				632F53722CC90508008D02AE /* NetworkManager.swift */,
-				632F53742CC908E9008D02AE /* APError.swift */,
 				632F53772CC91D2A008D02AE /* GruppetizersListViewModel.swift */,
+				63DA4B5A2CCB9F50005048A6 /* AlertItem.swift */,
+				632F53742CC908E9008D02AE /* APError.swift */,
+				63DA4B5C2CCBAE36005048A6 /* LoadingView.swift */,
 			);
 			path = Gruppetizers;
 			sourceTree = "<group>";
@@ -163,10 +169,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63DA4B5B2CCB9F50005048A6 /* AlertItem.swift in Sources */,
 				633D99172CC7B21600B04707 /* AccountView.swift in Sources */,
 				632F53752CC908E9008D02AE /* APError.swift in Sources */,
 				633D99092CC7B0D800B04707 /* GruppetizerTabView.swift in Sources */,
 				633D99152CC7B1E400B04707 /* GruppetizerListView.swift in Sources */,
+				63DA4B5D2CCBAE36005048A6 /* LoadingView.swift in Sources */,
 				632F53782CC91D2A008D02AE /* GruppetizersListViewModel.swift in Sources */,
 				633D991B2CC7BBB800B04707 /* Gruppetizer.swift in Sources */,
 				632F53732CC90508008D02AE /* NetworkManager.swift in Sources */,
