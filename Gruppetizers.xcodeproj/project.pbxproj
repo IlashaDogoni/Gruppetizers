@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		631905632CCD2117005FD52D /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631905622CCD2117005FD52D /* RemoteImage.swift */; };
 		632F53732CC90508008D02AE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632F53722CC90508008D02AE /* NetworkManager.swift */; };
 		632F53752CC908E9008D02AE /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632F53742CC908E9008D02AE /* APError.swift */; };
 		632F53782CC91D2A008D02AE /* GruppetizersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632F53772CC91D2A008D02AE /* GruppetizersListViewModel.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		631905622CCD2117005FD52D /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		632F53722CC90508008D02AE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		632F53742CC908E9008D02AE /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 		632F53762CC91A67008D02AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -72,21 +74,14 @@
 		633D99052CC7B0D800B04707 /* Gruppetizers */ = {
 			isa = PBXGroup;
 			children = (
+				63B7FC8C2CCD3C67000C9303 /* Model */,
+				63B7FC892CCD3B8E000C9303 /* Utilities */,
+				63B7FC8D2CCD3CAD000C9303 /* Views */,
+				63B7FC852CCD3A83000C9303 /* Screens */,
 				632F53762CC91A67008D02AE /* Info.plist */,
 				633D99062CC7B0D800B04707 /* GruppetizersApp.swift */,
-				633D99082CC7B0D800B04707 /* GruppetizerTabView.swift */,
 				633D990A2CC7B0D900B04707 /* Assets.xcassets */,
 				633D990C2CC7B0D900B04707 /* Preview Content */,
-				633D99142CC7B1E400B04707 /* GruppetizerListView.swift */,
-				633D99162CC7B21600B04707 /* AccountView.swift */,
-				633D99182CC7B21F00B04707 /* OrderView.swift */,
-				633D991A2CC7BBB800B04707 /* Gruppetizer.swift */,
-				633D991C2CC7C5D400B04707 /* GruppetizerListCell.swift */,
-				632F53722CC90508008D02AE /* NetworkManager.swift */,
-				632F53772CC91D2A008D02AE /* GruppetizersListViewModel.swift */,
-				63DA4B5A2CCB9F50005048A6 /* AlertItem.swift */,
-				632F53742CC908E9008D02AE /* APError.swift */,
-				63DA4B5C2CCBAE36005048A6 /* LoadingView.swift */,
 			);
 			path = Gruppetizers;
 			sourceTree = "<group>";
@@ -97,6 +92,110 @@
 				633D990D2CC7B0D900B04707 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		63B7FC852CCD3A83000C9303 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				633D99082CC7B0D800B04707 /* GruppetizerTabView.swift */,
+				63B7FC862CCD3AED000C9303 /* GruppetizerListView */,
+				63B7FC872CCD3B00000C9303 /* AccountView */,
+				63B7FC882CCD3B07000C9303 /* OrderView  */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		63B7FC862CCD3AED000C9303 /* GruppetizerListView */ = {
+			isa = PBXGroup;
+			children = (
+				632F53772CC91D2A008D02AE /* GruppetizersListViewModel.swift */,
+				633D99142CC7B1E400B04707 /* GruppetizerListView.swift */,
+			);
+			path = GruppetizerListView;
+			sourceTree = "<group>";
+		};
+		63B7FC872CCD3B00000C9303 /* AccountView */ = {
+			isa = PBXGroup;
+			children = (
+				633D99162CC7B21600B04707 /* AccountView.swift */,
+			);
+			path = AccountView;
+			sourceTree = "<group>";
+		};
+		63B7FC882CCD3B07000C9303 /* OrderView  */ = {
+			isa = PBXGroup;
+			children = (
+				633D99182CC7B21F00B04707 /* OrderView.swift */,
+			);
+			path = "OrderView ";
+			sourceTree = "<group>";
+		};
+		63B7FC892CCD3B8E000C9303 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				63B7FC8B2CCD3BE6000C9303 /* Alerts and errors */,
+				63B7FC8A2CCD3BB2000C9303 /* Managers */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		63B7FC8A2CCD3BB2000C9303 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				632F53722CC90508008D02AE /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		63B7FC8B2CCD3BE6000C9303 /* Alerts and errors */ = {
+			isa = PBXGroup;
+			children = (
+				63DA4B5A2CCB9F50005048A6 /* AlertItem.swift */,
+				632F53742CC908E9008D02AE /* APError.swift */,
+			);
+			path = "Alerts and errors";
+			sourceTree = "<group>";
+		};
+		63B7FC8C2CCD3C67000C9303 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				633D991A2CC7BBB800B04707 /* Gruppetizer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63B7FC8D2CCD3CAD000C9303 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63B7FC902CCD3CE2000C9303 /* Image */,
+				63B7FC8F2CCD3CDC000C9303 /* Cells */,
+				63B7FC8E2CCD3CBA000C9303 /* UIKit Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		63B7FC8E2CCD3CBA000C9303 /* UIKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				63DA4B5C2CCBAE36005048A6 /* LoadingView.swift */,
+			);
+			path = "UIKit Components";
+			sourceTree = "<group>";
+		};
+		63B7FC8F2CCD3CDC000C9303 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				633D991C2CC7C5D400B04707 /* GruppetizerListCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		63B7FC902CCD3CE2000C9303 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				631905622CCD2117005FD52D /* RemoteImage.swift */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +274,7 @@
 				633D99092CC7B0D800B04707 /* GruppetizerTabView.swift in Sources */,
 				633D99152CC7B1E400B04707 /* GruppetizerListView.swift in Sources */,
 				63DA4B5D2CCBAE36005048A6 /* LoadingView.swift in Sources */,
+				631905632CCD2117005FD52D /* RemoteImage.swift in Sources */,
 				632F53782CC91D2A008D02AE /* GruppetizersListViewModel.swift in Sources */,
 				633D991B2CC7BBB800B04707 /* Gruppetizer.swift in Sources */,
 				632F53732CC90508008D02AE /* NetworkManager.swift in Sources */,

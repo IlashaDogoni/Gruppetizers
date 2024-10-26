@@ -18,6 +18,7 @@ struct GruppetizerListView: View {
                     GruppetizerListCell(gruppetizer: gruppetizer)
                 }
                 .navigationTitle("🥓 Gruppetizers")
+                .listStyle(PlainListStyle())
             }
             .onAppear {
                 viewModel.getGruppetizers()

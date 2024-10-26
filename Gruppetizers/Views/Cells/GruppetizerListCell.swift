@@ -13,9 +13,8 @@ struct GruppetizerListCell: View {
      
     var body: some View {
         HStack {
-            Image(gruppetizer.imageURL)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
+            GruppetizerRemoteImage(urlString: gruppetizer.imageURL)
+                .aspectRatio(contentMode: .fit)
                 .frame(width: 120, height: 90)
                 .cornerRadius(10)
             
