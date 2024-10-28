@@ -28,9 +28,9 @@ struct MockData {
                                                description: "This is a yummy one, just eat and shit",
                                                price: 99.99,
                                                imageURL: "samplePicture",
-                                               calories: 600,
-                                               protein: 5,
-                                               carbs: 40)
+                                               calories: 777,
+                                               protein: 69,
+                                               carbs: 420)
     
     static let gruppetizers = [sampleGruppetizer,sampleGruppetizer,sampleGruppetizer,sampleGruppetizer]
 }

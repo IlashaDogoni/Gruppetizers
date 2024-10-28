@@ -20,6 +20,7 @@
 		633D99192CC7B21F00B04707 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633D99182CC7B21F00B04707 /* OrderView.swift */; };
 		633D991B2CC7BBB800B04707 /* Gruppetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633D991A2CC7BBB800B04707 /* Gruppetizer.swift */; };
 		633D991D2CC7C5D400B04707 /* GruppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633D991C2CC7C5D400B04707 /* GruppetizerListCell.swift */; };
+		635326E32CCE408A00E11A5A /* GruppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635326E22CCE408A00E11A5A /* GruppetizerDetailView.swift */; };
 		63DA4B5B2CCB9F50005048A6 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA4B5A2CCB9F50005048A6 /* AlertItem.swift */; };
 		63DA4B5D2CCBAE36005048A6 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA4B5C2CCBAE36005048A6 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		633D99182CC7B21F00B04707 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		633D991A2CC7BBB800B04707 /* Gruppetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gruppetizer.swift; sourceTree = "<group>"; };
 		633D991C2CC7C5D400B04707 /* GruppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GruppetizerListCell.swift; sourceTree = "<group>"; };
+		635326E22CCE408A00E11A5A /* GruppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GruppetizerDetailView.swift; sourceTree = "<group>"; };
 		63DA4B5A2CCB9F50005048A6 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
 		63DA4B5C2CCBAE36005048A6 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +112,7 @@
 			children = (
 				632F53772CC91D2A008D02AE /* GruppetizersListViewModel.swift */,
 				633D99142CC7B1E400B04707 /* GruppetizerListView.swift */,
+				635326E22CCE408A00E11A5A /* GruppetizerDetailView.swift */,
 			);
 			path = GruppetizerListView;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				633D99072CC7B0D800B04707 /* GruppetizersApp.swift in Sources */,
 				633D99192CC7B21F00B04707 /* OrderView.swift in Sources */,
 				633D991D2CC7C5D400B04707 /* GruppetizerListCell.swift in Sources */,
+				635326E32CCE408A00E11A5A /* GruppetizerDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
