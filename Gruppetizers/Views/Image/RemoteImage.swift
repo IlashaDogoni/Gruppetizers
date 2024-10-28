@@ -36,8 +36,6 @@ struct remoteImage: View {
                     .saturation(0.3)
             }
         }
-        .frame(width: 120, height: 90)
-        .cornerRadius(10)
     }
 }
 

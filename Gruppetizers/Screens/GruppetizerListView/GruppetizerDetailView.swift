@@ -10,14 +10,14 @@ import SwiftUI
 struct GruppetizerDetailView: View {
     
     let gruppetizer: Gruppetizer
+    @Binding var isShowingDetail: Bool
     
     var body: some View {
         VStack{
-            Image("samplePicture")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
+            GruppetizerRemoteImage(urlString: gruppetizer.imageURL)
+                .aspectRatio(contentMode: .fill)
                 .frame(width: 320, height: 222)
-            
+                Spacer()
             VStack{
                 Text(gruppetizer.name)
                     .font(.title2)
@@ -80,7 +80,7 @@ struct GruppetizerDetailView: View {
         .clipShape(RoundedRectangle(cornerRadius: 12))
         .shadow(color: .brandPrimary, radius: 30)
         .overlay(Button{
-            print("dismiss")
+            isShowingDetail = false
         } label: {
             ZStack{
                 Circle()
@@ -98,5 +98,5 @@ struct GruppetizerDetailView: View {
 }
 
 #Preview {
-    GruppetizerDetailView(gruppetizer: MockData.sampleGruppetizer)
+    GruppetizerDetailView(gruppetizer: MockData.sampleGruppetizer, isShowingDetail: .constant(true))
 }
