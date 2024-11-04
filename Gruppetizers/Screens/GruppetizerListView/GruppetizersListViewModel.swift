@@ -12,6 +12,8 @@ final class GruppetizersListViewModel: ObservableObject {
     @Published var gruppetizers : [Gruppetizer] = []
     @Published var alertItem : AlertItem?
     @Published var isLoading = false
+    @Published var isShowingDetail = false
+    @Published var selectedGruppetizer: Gruppetizer?
     
     func getGruppetizers() {
         isLoading = true

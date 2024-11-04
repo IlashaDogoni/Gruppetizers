@@ -12,6 +12,12 @@ final class imageLoader: ObservableObject {
     @Published var image: Image? = nil
     
     func load(fromUrlString urlString: String) {
+        
+        if let cachedImage = NetworkManager.shared.cache.object(forKey: NSString(string: urlString)) {
+                    self.image = Image(uiImage: cachedImage)
+                    return
+                }
+
         NetworkManager.shared.downloadImage(fromUrlString: urlString) { uiImage in
             guard let uiImage = uiImage else { return }
             DispatchQueue.main.async {

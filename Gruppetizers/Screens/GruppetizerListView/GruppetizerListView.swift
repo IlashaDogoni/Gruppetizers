@@ -10,8 +10,6 @@ import SwiftUI
 struct GruppetizerListView: View {
     
     @StateObject var viewModel = GruppetizersListViewModel()
-    @State private var isShowingDetail = false
-    @State private var selectedGruppetizer: Gruppetizer?
     
     var body: some View {
         ZStack {
@@ -19,24 +17,24 @@ struct GruppetizerListView: View {
                 List(viewModel.gruppetizers) { gruppetizer in
                     GruppetizerListCell(gruppetizer: gruppetizer)
                         .onTapGesture {
-                            selectedGruppetizer = gruppetizer
-                            isShowingDetail = true
+                            viewModel.selectedGruppetizer = gruppetizer
+                            viewModel.isShowingDetail = true
                         }
                 }
                 .navigationTitle("🥓 Gruppetizers")
                 .listStyle(PlainListStyle())
-                .disabled(isShowingDetail)
+                .disabled(viewModel.isShowingDetail)
             }
             .onAppear {
                 viewModel.getGruppetizers()
             }
-            .blur(radius: isShowingDetail ? 20 : 0)
+            .blur(radius: viewModel.isShowingDetail ? 20 : 0)
             if viewModel.isLoading {
                 LoadingView()
             }
             
-            if isShowingDetail {
-                GruppetizerDetailView(gruppetizer: selectedGruppetizer!, isShowingDetail: $isShowingDetail)
+            if viewModel.isShowingDetail {
+                GruppetizerDetailView(gruppetizer: viewModel.selectedGruppetizer!, isShowingDetail: $viewModel.isShowingDetail)
             }
         }
         .alert(item: $viewModel.alertItem) { alertItem in

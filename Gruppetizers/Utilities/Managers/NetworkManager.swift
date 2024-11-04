@@ -11,14 +11,14 @@ import UIKit
 final class NetworkManager {
     
     static let shared = NetworkManager()
-    private let cache = NSCache<NSString, UIImage>()
+    internal let cache = NSCache<NSString, UIImage>()
     
     static let baseURL = "http://seanallen-course-backend.herokuapp.com/swiftui-fundamentals/"
     private let gruppetizersURL = baseURL + "appetizers"
     
     private init (){}
     
-    func getGruppetizers(completed: @escaping (Result<[Gruppetizer], APError>) -> Void) {
+    func getGruppetizers(completed: @escaping (Result<[Gruppetizer], GPError>) -> Void) {
         guard let url = URL(string: gruppetizersURL) else {
             completed(.failure(.invalidURL))
             return
@@ -73,6 +73,11 @@ final class NetworkManager {
             }
             
             self.cache.setObject(image, forKey: cacheKey)
+
+            DispatchQueue.main.async {
+                        completed(image)
+                    }
+            
         }
         task.resume()
     }

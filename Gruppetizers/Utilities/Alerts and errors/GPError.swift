@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum APError: Error {
+enum GPError: Error {
     
     case invalidURL
     case invalidResponse

@@ -29,35 +29,9 @@ struct GruppetizerDetailView: View {
                     .padding()
                 
                 HStack(spacing: 40){
-                    VStack(spacing: 5){
-                        Text("Calories")
-                            .bold()
-                            .font(.caption)
-                        Text("\(gruppetizer.calories)")
-                            .foregroundStyle(.secondary)
-                            .fontWeight(.semibold)
-                            .italic()
-                    }
-                    
-                    VStack(spacing: 5){
-                        Text("Carbs")
-                            .bold()
-                            .font(.caption)
-                        Text("\(gruppetizer.carbs)")
-                            .foregroundStyle(.secondary)
-                            .fontWeight(.semibold)
-                            .italic()
-                    }
-                    
-                    VStack(spacing: 5){
-                        Text("Protein")
-                            .bold()
-                            .font(.caption)
-                        Text("\(gruppetizer.protein)")
-                            .foregroundStyle(.secondary)
-                            .fontWeight(.semibold)
-                            .italic()
-                    }
+                    NutritionInfo(title: "Calories", value: gruppetizer.calories)
+                    NutritionInfo(title: "Carbs", value: gruppetizer.carbs)
+                    NutritionInfo(title: "Protein", value: gruppetizer.protein)
                 }
             }
             Spacer()
@@ -65,13 +39,7 @@ struct GruppetizerDetailView: View {
             Button{
                 print("Tapped")
             } label: {
-                Text("$\(gruppetizer.price, specifier: "%.2f") - Add to Order")
-                    .font(.title2)
-                    .fontWeight(.semibold)
-                    .frame(width: 260, height: 50)
-                    .foregroundStyle(Color.white)
-                    .background(Color.brandPrimary)
-                    .clipShape(RoundedRectangle(cornerRadius: 8))
+               GPButton(title: "$\(gruppetizer.price, specifier: "%.2f") - Add to Order")
             }
             .padding(30)
         }
@@ -82,21 +50,31 @@ struct GruppetizerDetailView: View {
         .overlay(Button{
             isShowingDetail = false
         } label: {
-            ZStack{
-                Circle()
-                    .frame(width: 30, height: 30)
-                    .foregroundStyle(Color.white)
-                    .opacity(0.6)
-                
-                Image(systemName: "xmark")
-                    .imageScale(.small)
-                    .frame(width: 44, height: 44)
-                    .foregroundStyle(Color.black)
-            }
+            XDismissButton()
         }, alignment: .topTrailing)
     }
 }
 
 #Preview {
     GruppetizerDetailView(gruppetizer: MockData.sampleGruppetizer, isShowingDetail: .constant(true))
+}
+
+
+struct NutritionInfo: View {
+    
+    let title: String
+    let value: Int
+    
+    var body: some View {
+        VStack(spacing: 5){
+            Text(title)
+                .bold()
+                .font(.caption)
+            Text("\(value)")
+                .foregroundStyle(.secondary)
+                .fontWeight(.semibold)
+                .italic()
+        }
+    }
+    
 }
