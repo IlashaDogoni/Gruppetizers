@@ -76,5 +76,4 @@ struct NutritionInfo: View {
                 .italic()
         }
     }
-    
 }

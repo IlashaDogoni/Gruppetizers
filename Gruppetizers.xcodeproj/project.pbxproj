@@ -21,6 +21,8 @@
 		633D991B2CC7BBB800B04707 /* Gruppetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633D991A2CC7BBB800B04707 /* Gruppetizer.swift */; };
 		633D991D2CC7C5D400B04707 /* GruppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633D991C2CC7C5D400B04707 /* GruppetizerListCell.swift */; };
 		635326E32CCE408A00E11A5A /* GruppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635326E22CCE408A00E11A5A /* GruppetizerDetailView.swift */; };
+		637F851E2CDA626C003296F5 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F851D2CDA626C003296F5 /* AccountViewModel.swift */; };
+		637F85212CDA64C6003296F5 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F85202CDA64C6003296F5 /* String+Ext.swift */; };
 		638A89FA2CD8E8EA00FAA2B8 /* GPButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A89F92CD8E8EA00FAA2B8 /* GPButton.swift */; };
 		638A89FC2CD8EA9500FAA2B8 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A89FB2CD8EA9500FAA2B8 /* XDismissButton.swift */; };
 		63DA4B5B2CCB9F50005048A6 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA4B5A2CCB9F50005048A6 /* AlertItem.swift */; };
@@ -44,6 +46,8 @@
 		633D991A2CC7BBB800B04707 /* Gruppetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gruppetizer.swift; sourceTree = "<group>"; };
 		633D991C2CC7C5D400B04707 /* GruppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GruppetizerListCell.swift; sourceTree = "<group>"; };
 		635326E22CCE408A00E11A5A /* GruppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GruppetizerDetailView.swift; sourceTree = "<group>"; };
+		637F851D2CDA626C003296F5 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		637F85202CDA64C6003296F5 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		638A89F92CD8E8EA00FAA2B8 /* GPButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPButton.swift; sourceTree = "<group>"; };
 		638A89FB2CD8EA9500FAA2B8 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		63DA4B5A2CCB9F50005048A6 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
@@ -100,6 +104,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		637F851F2CDA64A8003296F5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				637F85202CDA64C6003296F5 /* String+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		638A89F82CD8E8CB00FAA2B8 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +145,7 @@
 		63B7FC872CCD3B00000C9303 /* AccountView */ = {
 			isa = PBXGroup;
 			children = (
+				637F851D2CDA626C003296F5 /* AccountViewModel.swift */,
 				633D99162CC7B21600B04707 /* AccountView.swift */,
 			);
 			path = AccountView;
@@ -149,6 +162,7 @@
 		63B7FC892CCD3B8E000C9303 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				637F851F2CDA64A8003296F5 /* Extensions */,
 				63B7FC8B2CCD3BE6000C9303 /* Alerts and errors */,
 				63B7FC8A2CCD3BB2000C9303 /* Managers */,
 			);
@@ -285,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				637F85212CDA64C6003296F5 /* String+Ext.swift in Sources */,
 				63DA4B5B2CCB9F50005048A6 /* AlertItem.swift in Sources */,
 				633D99172CC7B21600B04707 /* AccountView.swift in Sources */,
 				638A89FA2CD8E8EA00FAA2B8 /* GPButton.swift in Sources */,
@@ -300,6 +315,7 @@
 				633D99192CC7B21F00B04707 /* OrderView.swift in Sources */,
 				633D991D2CC7C5D400B04707 /* GruppetizerListCell.swift in Sources */,
 				635326E32CCE408A00E11A5A /* GruppetizerDetailView.swift in Sources */,
+				637F851E2CDA626C003296F5 /* AccountViewModel.swift in Sources */,
 				638A89FC2CD8EA9500FAA2B8 /* XDismissButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
