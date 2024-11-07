@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		631905632CCD2117005FD52D /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631905622CCD2117005FD52D /* RemoteImage.swift */; };
+		632644E72CDCD24100C30B59 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632644E62CDCD24100C30B59 /* User.swift */; };
 		632F53732CC90508008D02AE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632F53722CC90508008D02AE /* NetworkManager.swift */; };
 		632F53752CC908E9008D02AE /* GPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632F53742CC908E9008D02AE /* GPError.swift */; };
 		632F53782CC91D2A008D02AE /* GruppetizersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632F53772CC91D2A008D02AE /* GruppetizersListViewModel.swift */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		631905622CCD2117005FD52D /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		632644E62CDCD24100C30B59 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		632F53722CC90508008D02AE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		632F53742CC908E9008D02AE /* GPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPError.swift; sourceTree = "<group>"; };
 		632F53762CC91A67008D02AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				633D991A2CC7BBB800B04707 /* Gruppetizer.swift */,
+				632644E62CDCD24100C30B59 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				635326E32CCE408A00E11A5A /* GruppetizerDetailView.swift in Sources */,
 				637F851E2CDA626C003296F5 /* AccountViewModel.swift in Sources */,
 				638A89FC2CD8EA9500FAA2B8 /* XDismissButton.swift in Sources */,
+				632644E72CDCD24100C30B59 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
