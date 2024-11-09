@@ -26,6 +26,7 @@
 		637F85212CDA64C6003296F5 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F85202CDA64C6003296F5 /* String+Ext.swift */; };
 		638A89FA2CD8E8EA00FAA2B8 /* GPButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A89F92CD8E8EA00FAA2B8 /* GPButton.swift */; };
 		638A89FC2CD8EA9500FAA2B8 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A89FB2CD8EA9500FAA2B8 /* XDismissButton.swift */; };
+		63D2E3C22CDF7EF500ADDA8B /* OrderEmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D2E3C12CDF7EF500ADDA8B /* OrderEmptyState.swift */; };
 		63DA4B5B2CCB9F50005048A6 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA4B5A2CCB9F50005048A6 /* AlertItem.swift */; };
 		63DA4B5D2CCBAE36005048A6 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA4B5C2CCBAE36005048A6 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		637F85202CDA64C6003296F5 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		638A89F92CD8E8EA00FAA2B8 /* GPButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPButton.swift; sourceTree = "<group>"; };
 		638A89FB2CD8EA9500FAA2B8 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
+		63D2E3C12CDF7EF500ADDA8B /* OrderEmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderEmptyState.swift; sourceTree = "<group>"; };
 		63DA4B5A2CCB9F50005048A6 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
 		63DA4B5C2CCBAE36005048A6 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -200,6 +202,7 @@
 		63B7FC8D2CCD3CAD000C9303 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				63D2E3C02CDF7EC100ADDA8B /* Empty States */,
 				638A89F82CD8E8CB00FAA2B8 /* Buttons */,
 				63B7FC902CCD3CE2000C9303 /* Image */,
 				63B7FC8F2CCD3CDC000C9303 /* Cells */,
@@ -230,6 +233,14 @@
 				631905622CCD2117005FD52D /* RemoteImage.swift */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		63D2E3C02CDF7EC100ADDA8B /* Empty States */ = {
+			isa = PBXGroup;
+			children = (
+				63D2E3C12CDF7EF500ADDA8B /* OrderEmptyState.swift */,
+			);
+			path = "Empty States";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +329,7 @@
 				633D99192CC7B21F00B04707 /* OrderView.swift in Sources */,
 				633D991D2CC7C5D400B04707 /* GruppetizerListCell.swift in Sources */,
 				635326E32CCE408A00E11A5A /* GruppetizerDetailView.swift in Sources */,
+				63D2E3C22CDF7EF500ADDA8B /* OrderEmptyState.swift in Sources */,
 				637F851E2CDA626C003296F5 /* AccountViewModel.swift in Sources */,
 				638A89FC2CD8EA9500FAA2B8 /* XDismissButton.swift in Sources */,
 				632644E72CDCD24100C30B59 /* User.swift in Sources */,

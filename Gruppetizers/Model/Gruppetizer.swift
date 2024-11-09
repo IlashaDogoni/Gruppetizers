@@ -33,4 +33,33 @@ struct MockData {
                                                carbs: 420)
     
     static let gruppetizers = [sampleGruppetizer,sampleGruppetizer,sampleGruppetizer,sampleGruppetizer]
+    
+    static let sampleGruppetizerOne = Gruppetizer(id: 0001,
+                                               name: "Sloppy Sludge",
+                                               description: "This is a yummy one, just eat and shit",
+                                               price: 99.99,
+                                               imageURL: "samplePicture",
+                                               calories: 777,
+                                               protein: 69,
+                                               carbs: 420)
+    
+    static let sampleGruppetizerTwo = Gruppetizer(id: 0002,
+                                               name: "Sloppy Sludge",
+                                               description: "This is a yummy one, just eat and shit",
+                                               price: 99.99,
+                                               imageURL: "samplePicture",
+                                               calories: 777,
+                                               protein: 69,
+                                               carbs: 420)
+    
+    static let sampleGruppetizerThree = Gruppetizer(id: 0003,
+                                               name: "Sloppy Sludge",
+                                               description: "This is a yummy one, just eat and shit",
+                                               price: 99.99,
+                                               imageURL: "samplePicture",
+                                               calories: 777,
+                                               protein: 69,
+                                               carbs: 420)
+    
+     static let orderItems = [sampleGruppetizerOne, sampleGruppetizerTwo, sampleGruppetizerThree]
 }
