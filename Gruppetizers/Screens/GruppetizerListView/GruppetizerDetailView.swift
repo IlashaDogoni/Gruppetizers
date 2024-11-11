@@ -9,6 +9,8 @@ import SwiftUI
 
 struct GruppetizerDetailView: View {
     
+    @EnvironmentObject var order : Order
+    
     let gruppetizer: Gruppetizer
     @Binding var isShowingDetail: Bool
     
@@ -37,7 +39,8 @@ struct GruppetizerDetailView: View {
             Spacer()
             
             Button{
-                print("Tapped")
+                order.add(gruppetizer)
+                isShowingDetail = false
             } label: {
                GPButton(title: "$\(gruppetizer.price, specifier: "%.2f") - Add to Order")
             }

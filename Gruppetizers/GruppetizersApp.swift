@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct GruppetizersApp: App {
+    
+    var order = Order()
+    
     var body: some Scene {
         WindowGroup {
-            GruppetizerTabView()
+            GruppetizerTabView().environmentObject(order)
         }
     }
 }

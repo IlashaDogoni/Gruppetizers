@@ -7,40 +7,36 @@
 
 import SwiftUI
 
-
 struct OrderView: View {
     
-    @State private var orderItems = MockData.orderItems
+    @EnvironmentObject var order : Order
+    
         
     var body: some View {
         NavigationView {
             ZStack {
                 VStack {
                     List {
-                        ForEach(orderItems) {gruppetizer in
+                        ForEach(order.items) {gruppetizer in
                         GruppetizerListCell(gruppetizer: gruppetizer)
                         }
-                        .onDelete(perform: deleteItems)
+                        .onDelete(perform: order.delete)
                     }
                     .listStyle(.plain)
                     Button {
                         print("Order tapped")
                     } label: {
-                        GPButton(title: "$99.99 - Place Order")
+                        GPButton(title: "\(order.totalPrice, specifier: "%.2f") - Place Order")
                     }
                     .padding(.bottom, 30)
                 }
                 
-                if orderItems.isEmpty {
+                if order.items.isEmpty {
                     OrderEmptyState(imageName: "list.clipboard", message: "You have no items in the order. Please add a Gruppetizer!")
                 }
             }
             .navigationTitle("🧾 Orders")
         }
-    }
-    
-    func deleteItems(at offsets: IndexSet) {
-        orderItems.remove(atOffsets: offsets)
     }
 }
 
