@@ -16,6 +16,7 @@ struct GruppetizerListView: View {
             NavigationView {
                 List(viewModel.gruppetizers) { gruppetizer in
                     GruppetizerListCell(gruppetizer: gruppetizer)
+                      //  .listRowSeparator(.hidden)
                         .onTapGesture {
                             viewModel.selectedGruppetizer = gruppetizer
                             viewModel.isShowingDetail = true

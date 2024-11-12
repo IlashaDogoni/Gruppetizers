@@ -49,7 +49,7 @@ struct GruppetizerDetailView: View {
         .frame(width: 300, height: 525)
         .background(Color(.systemBackground))
         .clipShape(RoundedRectangle(cornerRadius: 12))
-        .shadow(color: .brandPrimary, radius: 30)
+        .shadow(color: .accent, radius: 30)
         .overlay(Button{
             isShowingDetail = false
         } label: {

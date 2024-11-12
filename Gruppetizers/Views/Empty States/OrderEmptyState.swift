@@ -15,13 +15,13 @@ struct OrderEmptyState: View {
     var body: some View {
         ZStack {
             Color(.systemBackground)
-                .edgesIgnoringSafeArea(.all)
+                .ignoresSafeArea()
             VStack {
                 Image(systemName: imageName)
                     .resizable()
                     .scaledToFit()
                     .frame(height: 200)
-                    .foregroundStyle(.brandPrimary)
+                    .foregroundStyle(.accent)
                     .opacity(0.8)
                     .tint(.gray)
                 

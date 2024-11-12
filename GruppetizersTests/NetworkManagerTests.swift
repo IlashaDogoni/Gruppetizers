@@ -43,6 +43,18 @@ class NetworkManagerTests: XCTestCase {
     }
 
     func testGetGruppetizersInvalidURL() {
+        let expectation = self.expectation(description: "URL is invalid")
+        networkManager.getGruppetizers { result in
+            switch result {
+            case .success(let gruppetizers):
+                XCTFail("Fine")
+            case .failure(let error):
+                XCTAssertNotNil(error)
+                print("\(error)")
+            }
+            expectation.fulfill()
+        }
+        waitForExpectations(timeout: 5, handler: nil)
         // You can modify the URL in your NetworkManager to trigger this case
         // For example, set an invalid URL and test the failure case
     }
